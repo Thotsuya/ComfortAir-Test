@@ -11,6 +11,7 @@ import Efficiency from "../components/Efficiency";
 import Customers from "../components/Customers";
 import Contact from "../components/Contact";
 import Clients from "../components/Clients";
+import Footer from "../components/Footer";
 
 export default function Home() {
   return (
@@ -33,6 +34,7 @@ export default function Home() {
         <Customers />
         <Contact />
         <Clients />
+        <Footer />
       </main>
     </div>
   );
