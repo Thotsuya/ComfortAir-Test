@@ -1,0 +1,12 @@
+.clientsContainer {
+  padding: 4rem 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  @media (min-width: 1024px) {
+    padding: 8rem 16rem;
+    flex-direction: row;
+  }
+}

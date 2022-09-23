@@ -10,6 +10,7 @@ import Products from "../components/Products";
 import Efficiency from "../components/Efficiency";
 import Customers from "../components/Customers";
 import Contact from "../components/Contact";
+import Clients from "../components/Clients";
 
 export default function Home() {
   return (
@@ -31,6 +32,7 @@ export default function Home() {
         <Efficiency />
         <Customers />
         <Contact />
+        <Clients />
       </main>
     </div>
   );
