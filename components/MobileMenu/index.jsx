@@ -1,5 +1,5 @@
 import { GiHamburgerMenu } from "react-icons/gi";
-import { FaTimes } from "react-icons/all";
+import { FaTimes } from "react-icons/fa";
 import { useState } from "react";
 import { motion } from "framer-motion";
 
@@ -7,7 +7,7 @@ export default function MobileMenu() {
   const [navOpen, setNavOpen] = useState(false);
 
   return (
-    <div className="md:hidden flex flex-col align-items-center p-4 w-full">
+    <div className="sticky lg:hidden flex flex-col align-items-center p-4 w-full">
       <button
         onClick={() => {
           setNavOpen(!navOpen);
@@ -15,11 +15,11 @@ export default function MobileMenu() {
         className="hover:bg-gray-200 p-2 rounded-full ml-auto transition ease-in-out duration-200 hover:text-primary-red"
       >
         {navOpen ? (
+          <FaTimes className="text-2xl" />
+        ) : (
           <GiHamburgerMenu
             className={`text-2xl ${navOpen ? "rotate-180" : ""}`}
           />
-        ) : (
-          <FaTimes className="text-2xl" />
         )}
       </button>
       {navOpen && (

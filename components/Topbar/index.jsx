@@ -10,14 +10,13 @@ import {
   FaYoutube,
 } from "react-icons/fa";
 import { MdPhoneInTalk } from "react-icons/md";
-import { GiHamburgerMenu } from "react-icons/gi";
 import { DiBingSmall } from "react-icons/di";
 
 export default function Index() {
   return (
     <header className={`${styles.header} flex flex-col justify-content-center`}>
       <MobileMenu />
-      <div className="hidden px-4 md:py-4 md:px-52 md:flex flex-row">
+      <div className="hidden px-4 md:py-4 md:px-52 lg:flex flex-row">
         <Image
           className="object-contain"
           src={"/assets/comfort-air-logo.png"}
