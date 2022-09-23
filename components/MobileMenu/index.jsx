@@ -7,7 +7,7 @@ export default function MobileMenu() {
   const [navOpen, setNavOpen] = useState(false);
 
   return (
-    <div className="sticky lg:hidden flex flex-col align-items-center p-4 w-full">
+    <div className="sticky xl:hidden flex flex-col align-items-center p-4 w-full">
       <button
         onClick={() => {
           setNavOpen(!navOpen);

@@ -16,7 +16,7 @@ export default function Services() {
   return (
     <>
       <div className="flex flex-col items-center py-12 px-4 h-100">
-        <div className="flex lg:flex-row flex-col items-center gap-20 lg:absolute lg:bottom-[-12rem] ">
+        <div className="flex lg:flex-row flex-col items-center gap-20 xl:absolute xl:bottom-[-12rem] ">
           <motion.div
             initial={{ opacity: 0, y: -300 }}
             animate={{ opacity: 1, y: 0, duration: 0.3 }}
