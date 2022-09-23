@@ -6,7 +6,9 @@ import { useRef, useEffect } from "react";
 
 export default function Services() {
   const imageThirtyYears = useRef(null);
+  const services = useRef(null);
   const isInView = useInView(imageThirtyYears);
+  const isInViewServices = useInView(services);
 
   return (
     <>
@@ -80,7 +82,15 @@ export default function Services() {
               src={"/assets/over30years.jpg"}
             />
           </div>
-          <div className="flex lg:flex-row flex-col gap-5 mt-8 py-6">
+          <div
+            ref={services}
+            style={{
+              transform: isInViewServices ? "none" : "translateX(-200px)",
+              opacity: isInViewServices ? 1 : 0,
+              transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s",
+            }}
+            className="flex lg:flex-row flex-col gap-5 mt-8 py-6"
+          >
             <div
               className={`${styles.servicesHeader} flex flex-col mt-12 lg:w-1/2 px-20`}
             >
