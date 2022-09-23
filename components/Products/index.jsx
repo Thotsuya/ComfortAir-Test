@@ -97,7 +97,7 @@ export default function Products() {
           />
         </motion.div>
       </div>
-      <div className="flex flex-col lg:flex-row mt-14 gap-14">
+      <div className="flex flex-col xl:flex-row mt-14 gap-14">
         <motion.div
           initial={{ opacity: 0, y: 100 }}
           animate={inView ? { opacity: 1, y: 0 } : { opacity: 0, y: 100 }}
@@ -113,13 +113,13 @@ export default function Products() {
         </motion.div>
         <div className="flex flex-col justify-content-center items-center">
           <h2
-            className={`${styles.productsHeader} text-4xl text-primary-blue lg:w-3/4 w-full`}
+            className={`${styles.productsHeader} text-4xl text-primary-blue xl:w-3/4 w-full`}
           >
             New Equipment Design
             <span> &</span> Installation
           </h2>
           <div
-            className={`lg:w-3/4 w-full content-center text-lg text-gray-500 mt-6 ${styles.paragraph}`}
+            className={`xl:w-3/4 w-full content-center text-lg text-gray-500 mt-6 ${styles.paragraph}`}
           >
             When you need a new heating or cooling system, we are proud to offer
             top of the line, efficient Lennox systems. As a Premier Dealer for
@@ -129,12 +129,12 @@ export default function Products() {
             business.
           </div>
           <h2
-            className={`${styles.productsHeader} text-xl text-primary-blue lg:w-3/4 w-full mt-6`}
+            className={`${styles.productsHeader} text-xl text-primary-blue xl:w-3/4 w-full mt-6`}
           >
             The system that we design for your home will include:
           </h2>
-          <div className="mr-auto w-full lg:w-3/4">
-            <ul className="mt-4 p-0 lg:ml-28">
+          <div className="mr-auto w-full xl:w-3/4">
+            <ul className="mt-4 p-0 xl:ml-28">
               <motion.li
                 initial={{ opacity: 0, y: 20 }}
                 animate={inView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}

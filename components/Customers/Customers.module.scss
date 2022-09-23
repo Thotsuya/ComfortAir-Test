@@ -1,0 +1,50 @@
+.customersContainer {
+  height: 100%;
+  width: 100%;
+  padding: 4rem 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  @media (min-width: 768px) {
+    padding: 8rem 16rem;
+  }
+
+}
+
+.customersHeader {
+  font-family: 'Visby Bold', sans-serif;
+
+  span {
+    font-family: Roboto, sans-serif;
+  }
+}
+
+.customersParagraph {
+  font-family: 'Visby Regular', sans-serif;
+
+  span {
+    font-family: Roboto, sans-serif;
+  }
+}
+
+.scheduleService {
+  background-image: url("/assets/bg-schedule-service.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100%;
+  width: 100%;
+  padding: 8rem 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-top: 6rem;
+  font-family: "Visby Bold", sans-serif;
+
+  span{
+    font-family: Roboto, sans-serif;
+  }
+}

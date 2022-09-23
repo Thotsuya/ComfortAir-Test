@@ -1,0 +1,20 @@
+.efficiencyContainer {
+  background-image: url("/assets/Innovative-service.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+  width: 100%;
+  padding: 4rem 4rem;
+  display: flex;
+  font-family: "Visby Regular", sans-serif;
+
+  @media (min-width: 768px) {
+    padding: 8rem 16rem;
+  }
+
+}
+
+.header{
+    font-family: 'Visby Bold', sans-serif;
+}

@@ -18,7 +18,7 @@ export default function CommercialServices() {
         Our Unsurpassed Residential <span>&</span> Commercial Services
       </motion.h3>
       <div
-        className={`flex md:flex-row flex-col gap-4 mt-12 text-white text-xl ${styles.serviceText}`}
+        className={`flex lg:flex-row flex-col gap-4 mt-12 text-white text-xl ${styles.serviceText}`}
       >
         <div className="lg:w-1/2 w-full">
           We are experts at providing reliable, prompt and affordable heating,
@@ -87,7 +87,7 @@ export default function CommercialServices() {
           initial={{ opacity: 0, y: 20 }}
           animate={inView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
           transition={{ duration: 0.5, delay: 1.1 }}
-          className="lg:w-1/2 w-full"
+          className="lg:w-1/2 w-full mt-12 lg:mt-0 flex justify-center items-center"
         >
           <Image
             src="/assets/youtube-covid.png"

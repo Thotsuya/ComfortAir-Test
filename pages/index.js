@@ -7,6 +7,8 @@ import Divider from "../components/Divider";
 import Perks from "../components/Perks";
 import CommercialServices from "../components/CommercialServices";
 import Products from "../components/Products";
+import Efficiency from "../components/Efficiency";
+import Customers from "../components/Customers";
 
 export default function Home() {
   return (
@@ -25,6 +27,8 @@ export default function Home() {
         <Perks />
         <CommercialServices />
         <Products />
+        <Efficiency />
+        <Customers />
       </main>
     </div>
   );
