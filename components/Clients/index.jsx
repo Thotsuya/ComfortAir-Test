@@ -8,7 +8,7 @@ export default function Clients() {
   const inView = useInView(container, { once: true });
 
   return (
-    <div ref={container} className={`${styles.clientsContainer} gap-12`}>
+    <div ref={container} className={`${styles.clientsContainer} gap-8`}>
       <motion.div
         initial={{ opacity: 0, x: -100 }}
         animate={inView ? { opacity: 1, x: 0 } : { opacity: 0, x: -100 }}

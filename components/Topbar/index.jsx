@@ -117,7 +117,41 @@ export default function Index() {
           </div>
         </div>
       </div>
-      <div className="md:py-4 md:px-16 bg-gray-200">asdasd</div>
+      <div className="md:py-4  xl:px-52 bg-gray-200 flex flex-col xl:flex-row">
+        <div className="text-primary-blue font-bold mx-auto xl:mx-0 mt-4 xl:mt-0 flex flex-row gap-2 xl:gap-0">
+          Emergency Service
+          <h3 className="text-primary-red font-bold xl:ml-2 mx-auto xl:mx-0">
+            Available
+          </h3>
+          <h3
+            className={`${styles.defaultFont} text-primary-blue font-bold xl:ml-2 mx-auto xl:mx-0`}
+          >
+            24/7
+          </h3>
+        </div>
+
+        {/*<div className="ml-auto flex xl:flex-row flex-col w-full xl:w-auto justify-content-center items-center">*/}
+        {/*  <span className="text-primary-red font-bold flex flex-row ">*/}
+        {/*    COVID<span className={`${styles.defaultFont}`}>-</span>19*/}
+        {/*    <h3 className="text-primary-blue ml-2 font-bold">Update</h3>*/}
+        {/*  </span>*/}
+
+        {/*  <div className="flex xl:flex-row flex-col">*/}
+        {/*    <div className="flex flex-row">*/}
+        {/*      <h3 className="text-gray-600 ">*/}
+        {/*        : Click here to read our office updates in response to COVID*/}
+        {/*        <span className={`${styles.defaultFont}`}>-</span>19*/}
+        {/*      </h3>*/}
+        {/*    </div>*/}
+        {/*    <div className="flex flex-row justify-content-center items-center">*/}
+        {/*      <a className="xl:ml-2 mx-auto underline flex flex-row" href="">*/}
+        {/*        Read More*/}
+        {/*        <AiOutlineArrowRight className="mt-1 ml-2" />*/}
+        {/*      </a>*/}
+        {/*    </div>*/}
+        {/*  </div>*/}
+        {/*</div>*/}
+      </div>
     </header>
   );
 }

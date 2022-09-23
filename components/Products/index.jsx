@@ -38,6 +38,13 @@ export default function Products() {
         <motion.div
           initial={{ opacity: 0, y: 100 }}
           animate={inView ? { opacity: 1, y: 0 } : { opacity: 0, y: 100 }}
+          whileHover={{
+            scale: 1,
+            textShadow: "0px 0px 4px gray",
+            boxShadow: "0px 0px 8px gray",
+          }}
+          transition={{ duration: 0.3 }}
+          className="cursor-pointer"
         >
           <Image
             src="/assets/Products1.png"
@@ -50,6 +57,13 @@ export default function Products() {
           initial={{ opacity: 0, y: 100 }}
           animate={inView ? { opacity: 1, y: 0 } : { opacity: 0, y: 100 }}
           transition={{ duration: 0.5, delay: 0.2 }}
+          whileHover={{
+            scale: 1,
+            textShadow: "0px 0px 4px gray",
+            boxShadow: "0px 0px 8px gray",
+            duration: 0.2,
+          }}
+          className="cursor-pointer"
         >
           <Image
             src="/assets/Products2.png"

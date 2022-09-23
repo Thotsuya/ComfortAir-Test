@@ -16,11 +16,15 @@ export default function Services() {
   return (
     <>
       <div className="flex flex-col items-center py-12 px-4 h-100">
-        <div className="flex lg:flex-row flex-col items-center gap-20 xl:absolute xl:bottom-[-12rem] ">
+        <div className="flex 2xl:flex-row flex-col items-center gap-20 2xl:absolute 2xl:bottom-[-12rem] ">
           <motion.div
             initial={{ opacity: 0, y: -300 }}
             animate={{ opacity: 1, y: 0, duration: 0.3 }}
             exit={{ opacity: 0, y: -100 }}
+            whileHover={{
+              scale: 1.1,
+              textShadow: "0px 0px 4px gray",
+            }}
           >
             <Image
               className="object-contain"
@@ -34,6 +38,10 @@ export default function Services() {
             initial={{ opacity: 0, y: -200 }}
             animate={{ opacity: 1, y: 0, duration: 0.3, delay: 0.6 }}
             exit={{ opacity: 0, y: -100 }}
+            whileHover={{
+              scale: 1.1,
+              textShadow: "0px 0px 4px gray",
+            }}
           >
             <Image
               className="object-contain"
@@ -47,6 +55,10 @@ export default function Services() {
             initial={{ opacity: 0, y: -100 }}
             animate={{ opacity: 1, y: 0, duration: 0.3, delay: 1.2 }}
             exit={{ opacity: 0, y: -100 }}
+            whileHover={{
+              scale: 1.1,
+              textShadow: "0px 0px 4px gray",
+            }}
           >
             <Image
               className="object-contain"
@@ -60,6 +72,10 @@ export default function Services() {
             initial={{ opacity: 0, y: 0 }}
             animate={{ opacity: 1, y: 0, duration: 0.3, delay: 1.8 }}
             exit={{ opacity: 0, y: -100 }}
+            whileHover={{
+              scale: 1.1,
+              textShadow: "0px 0px 4px gray",
+            }}
           >
             <Image
               className="object-contain"
