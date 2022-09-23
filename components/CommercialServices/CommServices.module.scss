@@ -1,0 +1,34 @@
+.serviceContainer {
+  background-image: url("/assets/bg2.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+  width: 100%;
+  padding: 4rem 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  @media (min-width: 768px) {
+    padding: 8rem 16rem;
+  }
+
+
+
+  h3{
+    font-family: 'Visby Bold', sans-serif;
+    font-size: 2.5rem;
+    color: #fff;
+    text-align: center;
+  }
+
+  span{
+    font-family: Roboto, sans-serif;
+  }
+}
+
+.serviceText{
+  font-family: 'Visby Regular', sans-serif;
+}

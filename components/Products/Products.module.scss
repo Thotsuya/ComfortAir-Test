@@ -1,0 +1,22 @@
+.productsHeader{
+  font-family: 'Visby Bold', sans-serif;
+
+  span{
+    font-family: Roboto, sans-serif;
+  }
+}
+
+.productsContainer{
+  padding: 4rem 4rem;
+
+  @media (min-width: 768px) {
+    padding: 3rem 16rem 8rem 16rem;
+  }
+}
+
+.paragraph{
+  font-family: 'Visby Regular', sans-serif;
+  span{
+    font-family: Roboto, sans-serif;
+  }
+}

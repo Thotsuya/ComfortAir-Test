@@ -6,6 +6,7 @@ import Services from "../components/Services";
 import Divider from "../components/Divider";
 import Perks from "../components/Perks";
 import CommercialServices from "../components/CommercialServices";
+import Products from "../components/Products";
 
 export default function Home() {
   return (
@@ -23,6 +24,7 @@ export default function Home() {
         <Divider />
         <Perks />
         <CommercialServices />
+        <Products />
       </main>
     </div>
   );
