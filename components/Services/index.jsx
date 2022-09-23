@@ -1,19 +1,22 @@
 import Image from "next/image";
 import styles from "./Services.module.scss";
-import { motion } from "framer-motion";
-import { useInView } from "framer-motion";
-import { useRef, useEffect } from "react";
+import { motion, useInView } from "framer-motion";
+import { useRef } from "react";
 
 export default function Services() {
   const imageThirtyYears = useRef(null);
   const services = useRef(null);
-  const isInView = useInView(imageThirtyYears);
-  const isInViewServices = useInView(services);
+  const isInView = useInView(imageThirtyYears, {
+    once: true,
+  });
+  const isInViewServices = useInView(services, {
+    once: true,
+  });
 
   return (
     <>
-      <div className="flex flex-col items-center py-12 px-4 relative ">
-        <div className="flex lg:flex-row flex-col items-center gap-20 absolute lg:bottom-[-5rem] ">
+      <div className="flex flex-col items-center py-12 px-4 h-100">
+        <div className="flex lg:flex-row flex-col items-center gap-20 lg:absolute lg:bottom-[-12rem] ">
           <motion.div
             initial={{ opacity: 0, y: -300 }}
             animate={{ opacity: 1, y: 0, duration: 0.3 }}
@@ -67,7 +70,7 @@ export default function Services() {
             />
           </motion.div>
         </div>
-        <div className="flex flex-col items-center gap-2 absolute lg:top-[15rem] top-[88em] py-6 lg:px-[8rem] mt-8">
+        <div className="flex flex-col items-center gap-2 py-6 lg:px-[8rem] mt-32">
           <div ref={imageThirtyYears}>
             <Image
               className="object-contain"
@@ -89,10 +92,10 @@ export default function Services() {
               opacity: isInViewServices ? 1 : 0,
               transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s",
             }}
-            className="flex lg:flex-row flex-col gap-5 mt-8 py-6"
+            className="flex xl:flex-row flex-col gap-5 mt-8 py-6"
           >
             <div
-              className={`${styles.servicesHeader} flex flex-col mt-12 lg:w-1/2 px-20`}
+              className={`${styles.servicesHeader} flex flex-col mt-12 xl:w-1/2 px-20`}
             >
               <h3 className="text-primary-blue">Keep Your Family Safe From</h3>
               <h3 className="text-primary-red heavy">
@@ -121,7 +124,7 @@ export default function Services() {
                 felis.
               </p>
             </div>
-            <div className="lg:w-1/2">
+            <div className="xl:w-1/2">
               <Image
                 className="object-contain"
                 width={774}

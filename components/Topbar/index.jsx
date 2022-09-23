@@ -14,9 +14,11 @@ import { DiBingSmall } from "react-icons/di";
 
 export default function Index() {
   return (
-    <header className={`${styles.header} flex flex-col justify-content-center`}>
+    <header
+      className={`${styles.header} flex flex-col justify-content-center w-full`}
+    >
       <MobileMenu />
-      <div className="hidden px-4 md:py-4 md:px-52 lg:flex flex-row">
+      <div className="hidden px-4 md:py-4 xl:px-52 xl:flex flex-row">
         <Image
           className="object-contain"
           src={"/assets/comfort-air-logo.png"}

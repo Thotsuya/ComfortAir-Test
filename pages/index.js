@@ -3,6 +3,7 @@ import Image from "next/image";
 import Topbar from "../components/Topbar";
 import Hero from "../components/Hero";
 import Services from "../components/Services";
+import Divider from "../components/Divider";
 
 export default function Home() {
   return (
@@ -17,6 +18,7 @@ export default function Home() {
         <Topbar />
         <Hero />
         <Services />
+        <Divider />
       </main>
     </div>
   );

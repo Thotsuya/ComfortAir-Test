@@ -4,15 +4,33 @@
   font-weight: 400;
 
   h3 {
-    span{
+    span {
       font-family: Roboto sans-serif;
     }
   }
 
-  p{
+  p {
     font-family: 'Visby Regular', sans-serif;
     font-size: 1rem;
     font-weight: 200;
     margin-top: 2rem;
   }
+}
+
+.servicesContainer {
+  height: calc(425vh - 10rem);
+
+  @media (min-width: 768px) {
+    height: calc(200vh - 14rem);
+  }
+
+  @media (min-width: 1024px) {
+    height: calc(222vh - 15rem);
+  }
+
+  @media(min-width: 1440px) {
+    height: calc(200vh - 19rem);
+
+  }
+
 }
