@@ -4,6 +4,8 @@ import Topbar from "../components/Topbar";
 import Hero from "../components/Hero";
 import Services from "../components/Services";
 import Divider from "../components/Divider";
+import Perks from "../components/Perks";
+import CommercialServices from "../components/CommercialServices";
 
 export default function Home() {
   return (
@@ -19,6 +21,8 @@ export default function Home() {
         <Hero />
         <Services />
         <Divider />
+        <Perks />
+        <CommercialServices />
       </main>
     </div>
   );
